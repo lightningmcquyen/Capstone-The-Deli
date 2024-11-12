@@ -2,7 +2,7 @@ package com.pluralsight.deli.enums;
 
 // Enum representing different cheese types for sandwiches
 public enum CheeseType {
-    AMERICAN(0.75), PROVOLONE(0.75), CHEDDAR(0.75), SWISS(0.75);
+    AMERICAN(0.75), PROVOLONE(0.75), CHEDDAR(0.75), SWISS(0.75), PATE(1.00);
 
     private double price;
 
