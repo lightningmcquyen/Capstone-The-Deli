@@ -1,40 +1,26 @@
 package com.pluralsight.deli.model;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ReceiptHandler {
 
     public static void printReceipt(Order order) {
-        // Get current time for receipt naming and formatting
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmm");
-        String formattedDate = now.format(formatter);
+        // Format current date and time
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        String dateTime = dateFormat.format(new Date());
 
-        // Create the file path for the receipt
-        String receiptFilePath = "receipts/" + formattedDate + ".txt";
-        File receiptFile = new File(receiptFilePath);
+        System.out.println("----- RECEIPT -----");
+        System.out.println("Customer: " + order.getCustomerName());
+        System.out.println("Date/Time: " + dateTime);
+        System.out.println("Items:");
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(receiptFile))) {
-            writer.write("704 Banh Mi\n");
-            writer.write("Customer: " + order.getCustomerName() + "\n");
-            writer.write("Date and Time: " + now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")) + "\n");
-            writer.write("Items Ordered:\n");
-
-            for (OrderItem item : order.getItems()) {
-                writer.write(item.getClass().getSimpleName() + " - $" + item.getPrice() + "\n");
-            }
-
-            writer.write("Total Price: $" + order.calculateTotalPrice() + "\n");
-
-            System.out.println("Receipt saved to " + receiptFilePath);
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        // Print item descriptions and prices
+        for (OrderItem item : order.getItems()) {
+            System.out.println(item.getDescription() + ": $" + item.getPrice());
         }
+
+        System.out.println("Total: $" + order.getTotalPrice());
+        System.out.println("------------------");
     }
 }

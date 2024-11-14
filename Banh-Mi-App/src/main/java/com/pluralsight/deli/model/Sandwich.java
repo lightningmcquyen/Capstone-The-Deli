@@ -1,74 +1,57 @@
 package com.pluralsight.deli.model;
 
 import com.pluralsight.deli.enums.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich implements OrderItem {
 
-    private BreadType breadType;
+    private BreadType bread;
     private SandwichSize size;
-    private List<MeatType> meats;
-    private List<PremiumTopping> premiumToppings;
-    private SauceType sauce;
-    private SideType side;
+    private List<PremiumTopping> premiumToppings = new ArrayList<>();
+    private List<RegularTopping> regularToppings = new ArrayList<>();
+    private List<SauceType> sauces = new ArrayList<>();
+    private boolean toasted;
 
-    public Sandwich(BreadType breadType, SandwichSize size, List<MeatType> meats,
-                    List<PremiumTopping> premiumToppings, SauceType sauce, SideType side) {
-        this.breadType = breadType;
+    public Sandwich(BreadType bread, SandwichSize size) {
+        this.bread = bread;
         this.size = size;
-        this.meats = meats;
-        this.premiumToppings = premiumToppings;
-        this.sauce = sauce;
-        this.side = side;
+    }
+
+    public void addPremiumTopping(PremiumTopping topping) {
+        premiumToppings.add(topping);
+    }
+
+    public void addRegularTopping(RegularTopping topping) {
+        regularToppings.add(topping);
+    }
+
+    public void addSauce(SauceType sauce) {
+        sauces.add(sauce);
+    }
+
+    public void setToasted(boolean toasted) {
+        this.toasted = toasted;
+    }
+
+    @Override
+    public String getDescription() {
+        return size + " " + bread + " sandwich with premium toppings: " + premiumToppings + ", regular toppings: " + regularToppings + ", sauces: " + sauces + ", toasted: " + toasted;
     }
 
     @Override
     public double getPrice() {
-        double price = 0;
-
-        // Add price based on the size of the sandwich
-        switch (size) {
-            case FOUR_INCH:
-                price = 5.50;
-                break;
-            case EIGHT_INCH:
-                price = 7.00;
-                break;
-            case TWELVE_INCH:
-                price = 8.50;
-                break;
-        }
-
-        // Add price for meats
-        for (MeatType meat : meats) {
-            switch (size) {
-                case FOUR_INCH:
-                    price += 1.00;
-                    break;
-                case EIGHT_INCH:
-                    price += 2.00;
-                    break;
-                case TWELVE_INCH:
-                    price += 3.00;
-                    break;
-            }
-        }
-
-        // Add price for premium toppings
+        double price = size.getPrice();
         for (PremiumTopping topping : premiumToppings) {
-            switch (size) {
-                case FOUR_INCH:
-                    price += 0.50;
-                    break;
-                case EIGHT_INCH:
-                    price += 1.00;
-                    break;
-                case TWELVE_INCH:
-                    price += 1.50;
-                    break;
-            }
+            price += topping.getPrice();
         }
-
+        for (RegularTopping topping : regularToppings) {
+            price += topping.getPrice();
+        }
+        for (SauceType sauce : sauces) {
+            price += sauce.getPrice();
+        }
         return price;
     }
 }

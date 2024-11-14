@@ -6,30 +6,27 @@ import java.util.List;
 public class Order {
 
     private String customerName;
-    private List<OrderItem> items;
+    private List<OrderItem> items = new ArrayList<>();
+    private double totalPrice;
 
     public Order(String customerName) {
         this.customerName = customerName;
-        this.items = new ArrayList<>();
-    }
-
-    public void addItem(OrderItem item) {
-        items.add(item);
     }
 
     public String getCustomerName() {
         return customerName;
     }
 
+    public void addItem(OrderItem item) {
+        items.add(item);
+        totalPrice += item.getPrice();
+    }
+
     public List<OrderItem> getItems() {
         return items;
     }
 
-    public double calculateTotalPrice() {
-        double total = 0;
-        for (OrderItem item : items) {
-            total += item.getPrice();
-        }
-        return total;
+    public double getTotalPrice() {
+        return totalPrice;
     }
 }

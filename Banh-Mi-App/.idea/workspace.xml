@@ -5,34 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e452ea0a-d9db-4307-9ef8-e3a393d0e20b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/receipt.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/BreadType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/CheeseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/DrinkSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/MeatType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/PremiumTopping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/RegularTopping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/SandwichSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/SauceType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/enums/SideType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/BanhMiApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/Chips.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/Drink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/OrderProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/ReceiptHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/model/Sandwich.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../704-Banh-Mi/src/main/java/com/pluralsight/deli/util/PromptMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/BreadType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/BreadType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/DrinkSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/DrinkSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/PremiumTopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/PremiumTopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/RegularTopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/RegularTopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SandwichSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SandwichSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SauceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SauceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SideType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/enums/SideType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/BanhMiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/BanhMiApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Chips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Chips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/OrderProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/ReceiptHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/ReceiptHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/model/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/util/PromptMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/util/PromptMaker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

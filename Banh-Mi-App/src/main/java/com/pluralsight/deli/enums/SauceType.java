@@ -1,6 +1,15 @@
 package com.pluralsight.deli.enums;
 
-// Enum to represent the different types of sauces
 public enum SauceType {
-    MAYO, MUSTARD, KETCHUP, RANCH, THOUSAND_ISLAND, VINAIGRETTE;
+    MAYO(0), MUSTARD(0), KETCHUP(0), RANCH(0), THOUSAND_ISLANDS(0), VINAIGRETTE(0);
+
+    private double price;
+
+    SauceType(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
