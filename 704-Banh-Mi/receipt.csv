@@ -1,0 +1,35 @@
+Customer: quyen
+4" BAGUETTE Sandwich with [GRILLED_PORK] meat, [PATE] cheese, topped with [JALAPENOS, CUCUMBERS, CILANTRO, PICKLED_CARROTS, HOMEMADE_BUTTER] - Price: $8.5
+Total: $8.5
+
+Customer: Quyen
+Date: 2024-11-13T18:36:41.430653900
+----------------------------------------------------
+BAGUETTE sandwich, 4 inch, Not Toasted
+Meats: [GRILLED_PORK]
+Cheese: null
+Toppings: [JALAPENOS, CUCUMBERS, CILANTRO, PICKLED_CARROTS, HOMEMADE_BUTTER]
+Sauces: [] - $2.5
+SMALL Drink - $1.0
+SAUCE - $0.0
+----------------------------------------------------
+Total: $3.5
+
+Customer: quyen
+Date: 2024-11-13T19:37:27.144215600
+----------------------------------------------------
+Sandwich with BAGUETTE bread, Meats: GRILLED_PORK Cheeses: Toppings: JALAPENOS CUCUMBERS CILANTRO PICKLED_CARROTS HOMEMADE_BUTTER  - $0.0
+SAUCE - $0.0
+Chips - $1.5
+----------------------------------------------------
+Total: $1.5
+
+Customer: quyen
+Date: 2024-11-13T20:22:44.943912600
+----------------------------------------------------
+BAGUETTE sandwich, 4 inches - $6.0
+Crunchy Chips - $1.5
+SMALL sized drink - $2.0
+----------------------------------------------------
+Total: $9.5
+
