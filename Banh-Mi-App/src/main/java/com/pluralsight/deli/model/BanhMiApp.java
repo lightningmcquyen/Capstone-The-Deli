@@ -1,7 +1,5 @@
 package com.pluralsight.deli.model;
 
-import com.pluralsight.deli.*;
-
 public class BanhMiApp {
 
     public static void main(String[] args) {

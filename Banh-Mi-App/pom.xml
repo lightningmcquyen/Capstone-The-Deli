@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.pluralsight.deli</groupId>
-    <artifactId>704-Banh-Mi</artifactId>
+    <artifactId>BanhMiApp</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

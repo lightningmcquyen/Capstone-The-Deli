@@ -4,10 +4,11 @@ import com.pluralsight.deli.util.PromptMaker;
 
 public class OrderProcessor {
 
+    // Method to process the order
     public static void processOrder() {
         // Step 1: Get the customer's name
         String customerName = PromptMaker.promptForCustomerName();
-        Order order = new Order(customerName);  // Create a new order for this customer
+        Order order = new Order(customerName);  // Create a new order for the customer
 
         // Step 2: Prompt the user for a sandwich
         Sandwich sandwich = PromptMaker.promptForSandwich();  // Prompt for sandwich selection
@@ -26,6 +27,6 @@ public class OrderProcessor {
         }
 
         // Step 5: Print the receipt for the order
-        ReceiptHandler.printReceipt(order);
+        ReceiptHandler.printReceipt(order);  // Print the order receipt
     }
 }

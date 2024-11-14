@@ -1,7 +1,6 @@
 package com.pluralsight.deli.model;
 
 import com.pluralsight.deli.enums.*;
-
 import java.util.List;
 
 public class Sandwich implements OrderItem {

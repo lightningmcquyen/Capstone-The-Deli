@@ -12,7 +12,7 @@ public class ReceiptHandler {
     public static void printReceipt(Order order) {
         // Get current time for receipt naming and formatting
         LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmm");
         String formattedDate = now.format(formatter);
 
         // Create the file path for the receipt
@@ -22,7 +22,7 @@ public class ReceiptHandler {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(receiptFile))) {
             writer.write("704 Banh Mi\n");
             writer.write("Customer: " + order.getCustomerName() + "\n");
-            writer.write("Date and Time: " + now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + "\n");
+            writer.write("Date and Time: " + now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")) + "\n");
             writer.write("Items Ordered:\n");
 
             for (OrderItem item : order.getItems()) {
