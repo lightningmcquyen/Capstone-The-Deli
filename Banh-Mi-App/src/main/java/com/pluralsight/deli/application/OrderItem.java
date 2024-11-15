@@ -1,4 +1,4 @@
-package com.pluralsight.deli.model;
+package com.pluralsight.deli.application;
 
 public interface OrderItem {
 

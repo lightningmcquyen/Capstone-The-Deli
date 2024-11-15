@@ -1,38 +1,44 @@
 package com.pluralsight.deli.ui;
 
-import com.pluralsight.deli.model.BanhMiApp;
-import com.pluralsight.deli.util.PromptMaker;
+import com.pluralsight.deli.application.Order;
+import com.pluralsight.deli.application.UtilMethods;
 
 public class HomeScreen {
 
-    // Method to display the home screen and handle user's initial choice
     public static void displayHomeScreen() {
-        System.out.println("Welcome to the Banh Mi Sandwich Shop!");
+        System.out.println("Welcome to 704 Banh Mi!");
         System.out.println("Please choose an option:");
         System.out.println("1. Start a new order");
-        System.out.println("2. View existing order");
-        System.out.println("3. Exit");
+        System.out.println("0. Exit");
 
-        int choice = PromptMaker.promptForChoice(3); // Prompt user for their choice (up to 3 options)
+        // Using a loop to handle invalid input instead of recursion
+        int choice;
+        do {
+            choice = UtilMethods.promptForChoice(1); // Get user choice (0 or 1)
 
-        // Handle user's choice
-        switch (choice) {
-            case 1:
-                // Start a new order, which will navigate to the SandwichScreen
-                BanhMiApp.startNewOrder();
-                break;
-            case 2:
-                // View existing order, this will allow the user to see their current order
-                BanhMiApp.viewExistingOrder();
-                break;
-            case 3:
-                // Exit the application
-                System.out.println("Thank you for visiting! Goodbye.");
-                System.exit(0); // Terminate the application
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
-                displayHomeScreen(); // Loop back to the home screen if the input is invalid
-        }
+            // Handle user's choice
+            switch (choice) {
+                case 1 -> {
+                    startNewOrder();  // Start a new order
+                    return;  // Exit the loop once the order starts
+                }
+                case 0 -> {
+                    System.out.println("Thank you for visiting! Goodbye.");
+                    System.exit(0);  // Exit the application
+                }
+                default -> System.out.println("Invalid choice. Please try again.");
+                // Continue to prompt user for a valid input
+            }
+        } while (true);  // Loop until the user chooses to exit
+    }
+
+    private static void startNewOrder() {
+        // Prompt user for name before starting the order
+        String customerName = UtilMethods.promptForString("Enter your name: ");  // Prompt for the name
+
+        // Create a new Order object with the customer name
+        Order order = new Order(customerName);  // Pass name to Order constructor
+        System.out.println("Order created: " + order.getCustomerName());
+        OrderScreen.displayOrderScreen(order); // Redirect to OrderScreen
     }
 }

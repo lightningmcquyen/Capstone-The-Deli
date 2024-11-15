@@ -1,0 +1,217 @@
+@startuml
+class com.pluralsight.deli.application.Drink {
+- DrinkSize size
+- String flavor
++ DrinkSize getSize()
++ void setSize(DrinkSize)
++ String getFlavor()
++ void setFlavor(String)
++ String getDescription()
++ double getPrice()
++ String toString()
+}
+
+
+class com.pluralsight.deli.ui.ChipsScreen {
++ {static} void displayChipsScreen(Order)
+}
+
+enum com.pluralsight.deli.enums.PremiumTopping {
++  STEAK
++  HAM
++  SALAMI
++  ROAST_BEEF
++  CHICKEN
++  BACON
++  COLD_CUTS
++  GRILLED_PORK
++  PATE
++  AMERICAN
++  PROVOLONE
++  CHEDDAR
++  SWISS
+- double priceFor4Inch
+- double priceFor8Inch
+- double priceFor12Inch
++ double getPrice(SandwichSize)
+}
+
+
+enum com.pluralsight.deli.enums.RegularTopping {
++  LETTUCE
++  PEPPERS
++  ONIONS
++  TOMATOES
++  JALAPENOS
++  CUCUMBERS
++  PICKLES
++  GUACAMOLE
++  MUSHROOMS
++  PICKLED_CARROTS
++  CILANTRO
++ double getPrice()
+}
+
+
+enum com.pluralsight.deli.enums.SauceType {
++  MAYO
++  MUSTARD
++  KETCHUP
++  RANCH
++  THOUSAND_ISLANDS
++  VINAIGRETTE
+- double price
++ double getPrice()
+}
+
+
+class com.pluralsight.deli.application.ReceiptHandler {
+- {static} String RECEIPT_FILE_PATH
++ {static} void saveReceiptToCSV(Order)
+- {static} String formatOrderForCSV(Order)
++ {static} void printReceipt(Order)
+- {static} String getCurrentDateTime()
+}
+
+
+enum com.pluralsight.deli.enums.SideType {
++  AU_JUS
++  HOMEMADE_BUTTER
++ double getPrice()
+}
+
+
+interface com.pluralsight.deli.application.OrderItem {
+~ String getDescription()
+~ double getPrice()
+}
+
+class com.pluralsight.deli.ui.OrderScreen {
++ {static} void displayOrderScreen(Order)
+}
+
+class com.pluralsight.deli.application.Sandwich {
+- BreadType bread
+- SandwichSize size
+- List<PremiumTopping> premiumToppings
+- List<RegularTopping> regularToppings
+- List<SauceType> sauces
+- boolean toasted
++ void addPremiumTopping(PremiumTopping)
++ void addRegularTopping(RegularTopping)
++ void addSauce(SauceType)
++ void setToasted(boolean)
++ BreadType getBread()
++ SandwichSize getSize()
++ List<PremiumTopping> getPremiumToppings()
++ List<RegularTopping> getRegularToppings()
++ List<SauceType> getSauces()
++ boolean isToasted()
++ void setBread(BreadType)
++ void setSize(SandwichSize)
++ void setPremiumToppings(List<PremiumTopping>)
++ void setRegularToppings(List<RegularTopping>)
++ void setSauces(List<SauceType>)
++ String getDescription()
++ String toString()
++ double getPrice()
+}
+
+
+class com.pluralsight.deli.ui.DrinkScreen {
++ {static} void displayDrinkScreen(Order)
+}
+
+class com.pluralsight.deli.application.Order {
+- String customerName
+- List<OrderItem> items
+- double totalPrice
++ String getCustomerName()
++ void setCustomerName(String)
++ void addItem(OrderItem)
++ List<OrderItem> getItems()
++ double getTotalPrice()
++ String toString()
+}
+
+
+class com.pluralsight.deli.application.Chips {
+- String flavor
++ String getFlavor()
++ void setFlavor(String)
++ String getDescription()
++ double getPrice()
++ String toString()
+}
+
+
+class com.pluralsight.deli.ui.CheckoutScreen {
++ {static} void displayCheckoutScreen(Order)
+}
+
+class com.pluralsight.deli.application.PromptMaker {
+- {static} Scanner scanner
++ {static} String promptForCustomerName()
++ {static} SandwichSize promptForSandwichSize()
++ {static} BreadType promptForBreadType()
++ {static} List<RegularTopping> promptForRegularToppings()
++ {static} List<PremiumTopping> promptForPremiumToppings()
++ {static} List<SauceType> promptForSauces()
++ {static} DrinkSize promptForDrinkSize()
++ {static} String promptForDrinkFlavor()
++ {static} String promptForChipsFlavor()
++ {static} boolean promptForToast()
++ {static} String promptForString(String)
++ {static} int promptForChoice(int)
++ {static} boolean promptForYesNo(String)
+}
+
+
+enum com.pluralsight.deli.enums.SandwichSize {
++  FOUR_INCH
++  EIGHT_INCH
++  TWELVE_INCH
+- double price
++ double getPrice()
+}
+
+
+enum com.pluralsight.deli.enums.DrinkSize {
++  SMALL
++  MEDIUM
++  LARGE
+- double price
++ double getPrice()
+}
+
+
+enum com.pluralsight.deli.enums.BreadType {
++  WHITE
++  WHEAT
++  RYE
++  WRAP
++  BAGUETTE
+- double price
++ double getPrice()
+}
+
+
+class com.pluralsight.deli.ui.SandwichScreen {
++ {static} void displaySandwichScreen(Order)
+}
+
+class com.pluralsight.deli.application.BanhMiApp {
++ {static} void main(String[])
+}
+
+class com.pluralsight.deli.ui.HomeScreen {
++ {static} void displayHomeScreen()
+- {static} void startNewOrder()
+}
+
+
+
+com.pluralsight.deli.application.OrderItem <|.. com.pluralsight.deli.application.Drink
+com.pluralsight.deli.application.OrderItem <|.. com.pluralsight.deli.application.Sandwich
+com.pluralsight.deli.application.OrderItem <|.. com.pluralsight.deli.application.Chips
+@enduml

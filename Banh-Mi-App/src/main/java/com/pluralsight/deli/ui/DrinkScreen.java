@@ -1,20 +1,22 @@
 package com.pluralsight.deli.ui;
 
-import com.pluralsight.deli.model.Order;
-import com.pluralsight.deli.model.Drink;
-import com.pluralsight.deli.model.OrderProcessor;
+import com.pluralsight.deli.application.Order;
+import com.pluralsight.deli.application.Drink;
+import com.pluralsight.deli.application.UtilMethods;
 
 public class DrinkScreen {
 
     public static void displayDrinkScreen(Order order) {
-        System.out.println("----- Drink Selection -----");
+        // Prompt user for drink options
+        Drink drink = new Drink(); // Create a new drink object
 
-        // Process drink order
-        Drink drink = OrderProcessor.processDrink();
+        // Prompt for drink size and flavor
+        drink.setSize(UtilMethods.promptForDrinkSize());
+        drink.setFlavor(UtilMethods.promptUserChoice("Enter drink flavor: "));
 
-        // Add drink to order
-        order.addItem(drink);
+        order.addItem(drink); // Add the drink to the order
 
-        System.out.println("Your drink has been added!");
+        // After adding the drink, return to the previous screen or continue adding other items
+        System.out.println("Your drink has been added to the order.");
     }
 }
