@@ -84,7 +84,7 @@ The checkout screen shows the order summary and prompts users to confirm the ord
 ![Checkout Screen](src/main/resources/Images/checkoutscreen.png)
 ![Checkout Receipt](src/main/resources/Images/checkoutreceipt.png)
 
-## What Can Be Improved in the Deli Sandwich Ordering System?
+## What Can Be Improved in the 704 Banh Mi Ordering System?
 
 - **User Input Validation**: Enhance validation to ensure that users only enter valid values (e.g., no negative numbers, invalid options).
 - **Dynamic Pricing**: Implement a more dynamic pricing structure that adjusts based on factors like promotional discounts or loyalty programs.
