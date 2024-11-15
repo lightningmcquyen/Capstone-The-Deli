@@ -36,7 +36,7 @@ public class ReceiptHandler {
         csvLine.append(order.getCustomerName()).append(",");  // Customer name
 
         // Add items details to the CSV line
-        for (OrderItem item : order.getItems()) {
+        for (Orderable item : order.getItems()) {
             csvLine.append(item.getDescription()).append(",");  // Item description
             csvLine.append(item.getPrice()).append(",");        // Item price
         }
@@ -59,7 +59,7 @@ public class ReceiptHandler {
         """.formatted(order.getCustomerName(), currentDateTime));
 
         // Print items
-        for (OrderItem item : order.getItems()) {
+        for (Orderable item : order.getItems()) {
             System.out.println(String.format("%s - $%.2f", item.getDescription(), item.getPrice()));
         }
 

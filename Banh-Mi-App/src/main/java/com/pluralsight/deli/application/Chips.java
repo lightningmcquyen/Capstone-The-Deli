@@ -1,6 +1,6 @@
 package com.pluralsight.deli.application;
 
-public class Chips implements OrderItem {
+public class Chips implements Orderable {
 
     private String flavor;
 

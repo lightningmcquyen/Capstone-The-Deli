@@ -6,7 +6,7 @@ import java.util.List;
 public class Order {
 
     private String customerName;
-    private List<OrderItem> items = new ArrayList<>();
+    private List<Orderable> items = new ArrayList<>();
     private double totalPrice;
 
     // Constructor with customer name
@@ -29,13 +29,13 @@ public class Order {
     }
 
     // Add an item to the order
-    public void addItem(OrderItem item) {
+    public void addItem(Orderable item) {
         items.add(item);
         totalPrice += item.getPrice();
     }
 
     // Get all items in the order
-    public List<OrderItem> getItems() {
+    public List<Orderable> getItems() {
 
         return items;
     }
@@ -43,7 +43,7 @@ public class Order {
     // Get total price of the order
     public double getTotalPrice() {
         double total = 0;
-        for (OrderItem item : items) {
+        for (Orderable item : items) {
             total += item.getPrice();
         }
         return total;

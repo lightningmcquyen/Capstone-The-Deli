@@ -5,7 +5,7 @@ import com.pluralsight.deli.enums.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sandwich implements OrderItem {
+public class Sandwich implements Orderable {
 
     private BreadType bread;
     private SandwichSize size;

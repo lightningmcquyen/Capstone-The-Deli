@@ -2,7 +2,7 @@ package com.pluralsight.deli.application;
 
 import com.pluralsight.deli.enums.DrinkSize;
 
-public class Drink implements OrderItem {
+public class Drink implements Orderable {
 
     private DrinkSize size;
     private String flavor;
