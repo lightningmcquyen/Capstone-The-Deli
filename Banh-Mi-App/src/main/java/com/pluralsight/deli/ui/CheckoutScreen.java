@@ -8,8 +8,14 @@ public class CheckoutScreen {
 
     public static void displayCheckoutScreen(Order order) {
         // Display the details of the current order
-        System.out.println("Your Order Summary:");
-        System.out.println(order);  // Assuming the toString method is properly formatted
+        System.out.println("""
+            🥪 Check Out 🥪
+    =================================
+    Please take a look at your order.
+      Confirm yes or no to proceed.
+    =================================
+    """);
+        System.out.println(order);
 
         // Display total price
         System.out.println("Total Price: $" + order.getTotalPrice());
@@ -23,6 +29,8 @@ public class CheckoutScreen {
             ReceiptHandler.saveReceiptToCSV(order);  // Ensure this is called to save to CSV file
 
             System.out.println("Thank you for your order!");
+            HomeScreen.displayHomeScreen();
+
         } else {
             System.out.println("Cancelling your order...");
             HomeScreen.displayHomeScreen();  // Go back to home screen

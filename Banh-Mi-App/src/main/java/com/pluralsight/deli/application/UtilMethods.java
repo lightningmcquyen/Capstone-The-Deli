@@ -82,7 +82,6 @@ public class UtilMethods {
 
     public static String promptForString(String message) {
         System.out.print(message);  // Display the message to prompt the user
-        scanley.nextLine();  // Ensure no leftover newline character from previous input
 
         // Wait for the user's input and return it
         String input = scanley.nextLine();

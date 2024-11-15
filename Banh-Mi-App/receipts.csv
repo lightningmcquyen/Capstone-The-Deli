@@ -18,7 +18,16 @@ quyen,FOUR_INCH BAGUETTE sandwich with premium toppings: [PATE, COLD_CUTS], regu
 ,11.0,MEDIUM Root drink,2.5,Salt chips,1.5,Total Price: 15.0
 11/14/2024 23:36,queef,FOUR_INCH WHITE sandwich with:
 - Premium toppings: [STEAK]
-- Regular toppings: [LETTUCE]
+- Regular toppings: [LETTUCE],,
 - Sauces: [MAYO]
 - Toasted: false
 ,6.5,Total Price: 6.5
+11/15/2024 01:23,,hot chips,1.5,Total Price: 1.5
+11/15/2024 01:32,quyenies,lays chips,1.5,Total Price: 1.5
+11/15/2024 01:34,Quinoa,LARGE Coffee drink,3.0,Total Price: 3.0
+11/15/2024 01:43,Quinn,FOUR_INCH WHITE sandwich with:
+- Premium toppings: [STEAK]
+- Regular toppings: [LETTUCE]
+- Sauces: [MAYO]
+- Toasted: false
+,6.5,SMALL coke drink,2.0,lays chips,1.5,Total Price: 10.0

@@ -1,20 +1,25 @@
-# 🥪 704 Banh Mi Ordering System 🍞
+
+![704 Banh Mi](src/main/resources/Images/704-Banh-Mi.png)
 
 ## Overview
 
-The 704 Banh Mi Ordering System is a Java-based application designed to help users customize and order sandwiches with various options; including bread type, toppings, sauces, drinks, and chips. The system allows users to place orders under their name, view their order summary, and generate a receipt. It demonstrates key programming concepts such as user input handling, enum usage, object-oriented design, and CSV file handling for receipt storage.
+The 704 Banh Mi Ordering System is a Java-based application designed to help users customize and order sandwiches with various options; including bread type, toppings, sauces, drinks, and chips. The system allows users to place orders under their name, view their order summary, and generate a receipt. It demonstrates key programming concepts such as user input handling, enum usage, object-oriented design, generic methods, interface classes, JUnit testing, etc..
 
 ## Features
 
 - **Create New Order**: Start a new order by entering customer details.
-- **Add Sandwich**: Choose bread type, sandwich size, regular and premium toppings, sauces, and toast preference.
-- **Add Drink**: Select drink size and flavor.
-- **Add Chips**: Choose chips flavor.
+- **Add Sandwich**: Choose bread type, sandwich size, regular and premium toppings, sauces, and toasting preference.
+- **Add Drink**: Select drink size and choose your drink flavor.
+- **Add Chips**: Choose your chip flavor.
 - **Checkout**: Confirm order details, view total price, and generate receipt.
 - **Save Receipt**: Automatically saves a receipt to a CSV file for future reference.
 - **Order Summary**: Displays the complete order with all items added, including sandwiches, drinks, chips, and sauces.
 
 ## Structure
+
+### The Big Picture 
+
+![Final UML](src/main/resources/Images/Banh-Mi-UML.png)
 
 The application is structured into several classes, each fulfilling a specific role:
 
@@ -24,7 +29,7 @@ This class represents a sandwich order and contains the following attributes:
 - **size**: Size of the sandwich (e.g., 4-inch, 8-inch, 12-inch).
 - **regularToppings**: List of regular toppings (e.g., Lettuce, Tomatoes, Pickles).
 - **premiumToppings**: List of premium toppings (e.g., Steak, Chicken, Bacon).
-- **sauces**: List of sauces (e.g., Mayo, Mustard, AU_JUS, Homemade Butter).
+- **sauces**: List of sauces (e.g., Mayo, Mustard, Homemade Butter).
 - **toasted**: Boolean indicating whether the sandwich is toasted.
 
 **Key Methods:**
@@ -66,29 +71,26 @@ These classes handle the main user interface, displaying the home screen and the
 ### Home Screen
 The main menu allows users to start a new order or exit the application.
 
-![Home Screen](images/HomeScreen.png)
+![Home Screen](src/main/resources/Images/HomeScreen.png)
 
 ### Order Menu
 From the order menu, users can add sandwiches, drinks, chips, and proceed to checkout.
 
-![Order Menu](images/OrderScreen.png)
+![Order Menu](src/main/resources/Images/OrderScreen.png)
 
 ### Checkout Screen
 The checkout screen shows the order summary and prompts users to confirm the order.
 
-![Checkout Screen](images/CheckoutScreen.png)
+![Checkout Screen](src/main/resources/Images/checkoutscreen.png)
+![Checkout Receipt](src/main/resources/Images/checkoutreceipt.png)
 
 ## What Can Be Improved in the Deli Sandwich Ordering System?
 
 - **User Input Validation**: Enhance validation to ensure that users only enter valid values (e.g., no negative numbers, invalid options).
 - **Dynamic Pricing**: Implement a more dynamic pricing structure that adjusts based on factors like promotional discounts or loyalty programs.
 - **Better Error Handling**: Provide more informative error messages for invalid inputs and edge cases.
-- **Multi-language Support**: Add support for multiple languages to make the app more accessible to a wider audience.
 - **Graphical User Interface (GUI)**: Consider building a GUI for a more user-friendly interface.
-
-## Acknowledgments
-
-- Special thanks to the Java community for providing insightful tutorials and discussions that helped shape this project.
+- **Better Usage of Enums**: Consider not hard-coding values into enum classes.
 
 ---
 
@@ -96,12 +98,12 @@ The checkout screen shows the order summary and prompts users to confirm the ord
 
 The part I found most interesting to work on was the `UtilMethods` class. By using generic methods for enum selection and user prompts, I was able to reduce repetition in my code and make it more maintainable.
 
-![UtilMethods Class](images/UtilMethods.png)
+![UtilMethods Class](src/main/resources/Images/utilitygenerics.png)
 
 ---
 
 ### Final Thoughts
 
-This project helped me gain a deeper understanding of Java, object-oriented programming, and working with file I/O. I'm excited about how well the application turned out and look forward to making it even better in the future.
+This project helped me gain a deeper understanding of Java and subjects such as advanced object-oriented programming or working with JUnit tests. If I'm being honest, this project was extremely difficult to complete as a beginner in Java. I contemplated quitting the program many times this week. But through the encouragement of my peers and my own grit, I'm still here. I'm excited about how well the application turned out and look forward to making it even better in the future.
 
-![Thanks for Checking Out the Deli Sandwich Ordering System!](images/ThankYou.png)
+![Thanks for Checking Out the 704 Banh Mi Ordering System!](src/main/resources/Images/704 Bai.png)
