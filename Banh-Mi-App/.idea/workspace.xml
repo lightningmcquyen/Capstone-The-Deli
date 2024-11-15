@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e452ea0a-d9db-4307-9ef8-e3a393d0e20b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/receipts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/receipts.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/CheckoutScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/CheckoutScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/704 Banh Mi.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/704-Banh-Mi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OrderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

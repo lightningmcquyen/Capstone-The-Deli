@@ -32,7 +32,7 @@ public class CheckoutScreen {
             HomeScreen.displayHomeScreen();
 
         } else {
-            System.out.println("Cancelling your order...");
+            System.out.println("Canceling your order...");
             HomeScreen.displayHomeScreen();  // Go back to home screen
         }
     }

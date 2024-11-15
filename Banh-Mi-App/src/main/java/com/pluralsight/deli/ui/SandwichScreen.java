@@ -12,7 +12,6 @@ public class SandwichScreen {
         Sandwich sandwich = new Sandwich();
 
         // Prompt the user for sandwich options (bread type, size, toppings, sauces, toast preference)
-//        sandwich.setBread(UtilMethods.promptForBreadType());
         sandwich.setBread(UtilMethods.promptForEnum(BreadType.class));
         sandwich.setSize(UtilMethods.promptForEnum(SandwichSize.class));
         sandwich.setRegularToppings(UtilMethods.promptForEnumSelections(RegularTopping.class));

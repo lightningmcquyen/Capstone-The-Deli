@@ -37,7 +37,7 @@ public class OrderScreen {
                     continueOrdering = false; // End the process after checkout
                     break;
                 case 0:
-                    System.out.println("Cancelling order...");
+                    System.out.println("Canceling order...");
                     // Cancel the order and return to HomeScreen
                     HomeScreen.displayHomeScreen();
                     continueOrdering = false;
