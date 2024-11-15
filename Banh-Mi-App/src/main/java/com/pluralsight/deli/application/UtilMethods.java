@@ -44,21 +44,28 @@ public class UtilMethods {
     ====================================
     """ + reset);
 
+        // Get the enum constants from the enum class passed as argument
         T[] enumConstants = enumClass.getEnumConstants();
 
-        // Display the available enum constants
+        // Display the available enum constants with an index starting from 1
         for (int i = 0; i < enumConstants.length; i++) {
-            System.out.println((i + 1) + ") " + enumConstants[i]);
+            System.out.println((i + 1) + ") " + enumConstants[i]); // Display each enum constant with a number
         }
 
         int choice;
+
+        // Allow multiple selections
         do {
-            choice = scanley.nextInt();
+            choice = scanley.nextInt(); // Read the user's input (choice)
+
+            // If the choice is within the valid range, add the corresponding enum constant to the list
             if (choice > 0 && choice <= enumConstants.length) {
                 selections.add(enumConstants[choice - 1]);
             }
-        } while (choice != 0);
 
+        } while (choice != 0); // Repeat until the user enters 0 to stop
+
+        // Return the list of selected enum constants
         return selections;
     }
 
