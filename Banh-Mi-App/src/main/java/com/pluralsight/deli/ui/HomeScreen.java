@@ -6,10 +6,23 @@ import com.pluralsight.deli.application.UtilMethods;
 public class HomeScreen {
 
     public static void displayHomeScreen() {
-        System.out.println("Welcome to 704 Banh Mi!");
-        System.out.println("Please choose an option:");
-        System.out.println("1. Start a new order");
-        System.out.println("0. Exit");
+        System.out.println("""
+                
+                   ______  ___   _  _     ____                 _       __  __  _\s
+                  |____  |/ _ \\ | || |   |  _ \\               | |     |  \\/  |(_)
+                      / /| | | || || |_  | |_) |  __ _  _ __  | |__   | \\  / | _\s
+                     / / | | | ||__   _| |  _ <  / _` || '_ \\ | '_ \\  | |\\/| || |
+                    / /  | |_| |   | |   | |_) || (_| || | | || | | | | |  | || |
+                   /_/    \\___/    |_|   |____/  \\__,_||_| |_||_| |_| |_|  |_||_|
+                                                                                \s
+                                                                                  \s
+                 ================================
+                 🥪 How can I help you today? 🥪 
+                 ================================
+                 1. Start a new order
+                 0. Exit
+                 ================================
+                """);
 
         // Using a loop to handle invalid input instead of recursion
         int choice;

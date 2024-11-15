@@ -10,16 +10,13 @@ public class UtilMethods {
 
     private static final Scanner scanley = new Scanner(System.in);
 
-//    // Prompt for customer name
-//    public static String promptForCustomerName() {
-//        System.out.print("Enter your name: ");
-//        return scanley.nextLine();
-//    }
-
-
     // Used a generic class - takes any enum classes as a parameter for less repetitive code
     public static <T extends Enum<T>> T promptForEnum(Class<T> enumClass) {
-        System.out.println("Choose an option: ");
+        System.out.println("""
+    🥪 Select Option 🥪
+    ====================
+    """);
+
         T[] enumConstants = enumClass.getEnumConstants(); // Gets values from enum class
         for (int i = 0; i < enumConstants.length; i++) { // (Initialize, conditional - stops at the length, inc/dec) - check length of how many constants in my enum class
             System.out.println((i + 1) + ") " + enumConstants[i]); // Fixes the index of options + enumConstants[i]
@@ -31,7 +28,13 @@ public class UtilMethods {
 
     public static <T extends Enum<T>> List<T> promptForEnumSelections(Class<T> enumClass) {
         List<T> selections = new ArrayList<>();
-        System.out.println("Select options (0 to stop): ");
+        System.out.println("""
+           🥪 Select Options 🥪 
+    ====================================
+    You may choose more than one.
+    Enter 0 to continue with your order.
+    ====================================
+    """);
 
         T[] enumConstants = enumClass.getEnumConstants();
 

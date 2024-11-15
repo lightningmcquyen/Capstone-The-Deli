@@ -10,16 +10,6 @@ public class Chips implements OrderItem {
         this.flavor = "Plain";  // Default flavor
     }
 
-//    // Parameterized constructor to set the flavor at the time of creation
-//    public Chips(String flavor) {
-//
-//        this.flavor = flavor;
-//    }
-//
-//    public String getFlavor() {
-//
-//        return flavor;
-//    }
 
     public void setFlavor(String flavor) {
 

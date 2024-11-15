@@ -21,58 +21,6 @@ public class Sandwich implements OrderItem {
         this.sauces = new ArrayList<>();
     }
 
-//    // Parameterized constructor
-//    public Sandwich(BreadType bread, SandwichSize size) {
-//        this.bread = bread;
-//        this.size = size;
-//        this.premiumToppings = new ArrayList<>();
-//        this.regularToppings = new ArrayList<>();
-//        this.sauces = new ArrayList<>();
-//    }
-
-//    // Add toppings, sauces, etc.
-//    public void addPremiumTopping(PremiumTopping topping) {
-//        premiumToppings.add(topping);
-//    }
-//
-//    public void addRegularTopping(RegularTopping topping) {
-//        regularToppings.add(topping);
-//    }
-//
-//    public void addSauce(SauceType sauce) {
-//        sauces.add(sauce);
-//    }
-//
-//    public void setToasted(boolean toasted) {
-//        this.toasted = toasted;
-//    }
-//
-//    // Getters for the sandwich properties
-//    public BreadType getBread() {
-//        return bread;
-//    }
-//
-//    public SandwichSize getSize() {
-//        return size;
-//    }
-//
-//    public List<PremiumTopping> getPremiumToppings() {
-//        return premiumToppings;
-//    }
-//
-//    public List<RegularTopping> getRegularToppings() {
-//        return regularToppings;
-//    }
-//
-//    public List<SauceType> getSauces() {
-//        return sauces;
-//    }
-//
-//    public boolean isToasted() {
-//        return toasted;
-//    }
-
-
     // Setters for the sandwich properties
     public void setBread(BreadType bread) {
         this.bread = bread;
@@ -94,10 +42,17 @@ public class Sandwich implements OrderItem {
         this.sauces = sauces;
     }
 
-    // Method from OrderItem interface
+    public boolean setToasted(boolean promptForToast) {return isToasted;}
+
     @Override
     public String getDescription() {
-        return size + " " + bread + " sandwich with premium toppings: " + premiumToppings + ", regular toppings: " + regularToppings + ", sauces: " + sauces + ", toasted: " + isToasted;
+        return String.format("""
+        %s %s sandwich with:
+        - Premium toppings: %s
+        - Regular toppings: %s
+        - Sauces: %s
+        - Toasted: %b
+        """, size, bread, premiumToppings, regularToppings, sauces, isToasted);
     }
 
     @Override
@@ -129,7 +84,4 @@ public class Sandwich implements OrderItem {
         return price;
     }
 
-    public boolean setToasted(boolean promptForToast) {
-        return isToasted;
-    }
 }

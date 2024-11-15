@@ -20,7 +20,6 @@ public class ReceiptHandler {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(RECEIPT_FILE_PATH, true))) {
             writer.write(orderDetails);
             writer.newLine();  // Add a new line after each receipt
-            System.out.println("Receipt saved to CSV.");
         } catch (IOException e) {
             System.out.println("Error writing receipt to CSV: " + e.getMessage());
         }
@@ -48,15 +47,26 @@ public class ReceiptHandler {
         return csvLine.toString();
     }
 
-    // This method prints the receipt to the console
     public static void printReceipt(Order order) {
         String currentDateTime = getCurrentDateTime();
-        System.out.println("Receipt for " + order.getCustomerName());
-        System.out.println("Date: " + currentDateTime);
+
+        // Print header
+        System.out.println("""
+        -----------------------------
+        Receipt for: %s
+        Date: %s
+        -----------------------------
+        """.formatted(order.getCustomerName(), currentDateTime));
+
+        // Print items
         for (OrderItem item : order.getItems()) {
-            System.out.println(item.getDescription() + " - $" + item.getPrice());
+            System.out.println(String.format("%s - $%.2f", item.getDescription(), item.getPrice()));
         }
-        System.out.println("Total Price: $" + order.getTotalPrice());
+
+        // Print total
+        System.out.println("-----------------------------");
+        System.out.printf("Total Price: $%.2f\n", order.getTotalPrice());
+        System.out.println("-----------------------------");
     }
 
     // Helper method to get the current date and time formatted as mm/dd/yyyy hh:mm

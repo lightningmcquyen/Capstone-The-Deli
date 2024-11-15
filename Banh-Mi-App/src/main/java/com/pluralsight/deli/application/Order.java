@@ -51,6 +51,9 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order for " + customerName + "\n" + "Items: " + items.toString();
+        return String.format("""
+                Order for: %s
+                Order: %s
+                """, customerName, items);
     }
 }

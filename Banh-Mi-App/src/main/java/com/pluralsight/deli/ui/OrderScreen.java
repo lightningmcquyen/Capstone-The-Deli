@@ -9,12 +9,16 @@ public class OrderScreen {
         boolean continueOrdering = true;
 
         while (continueOrdering) {
-            System.out.println("\nLet's go ahead with your order!");
-            System.out.println("1. Add Sandwich");
-            System.out.println("2. Add Drink");
-            System.out.println("3. Add Chips");
-            System.out.println("4. Checkout");
-            System.out.println("0. Cancel Order");
+            System.out.println("""
+       🥪 ORDER 🥪
+    ==================
+    1. Add Sandwich
+    2. Add Drink
+    3. Add Chips
+    4. Checkout
+    0. Cancel Order
+    ==================
+    """);
 
             int choice = UtilMethods.promptForChoice(4); // Get user choice (0 to 4)
 
