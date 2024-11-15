@@ -8,8 +8,12 @@ public class OrderScreen {
     public static void displayOrderScreen(Order order) {
         boolean continueOrdering = true;
 
+        // ANSI escape code for magenta
+        String magenta = "\033[35m";
+        String reset = "\033[0m";  // ANSI code to reset to default color
+
         while (continueOrdering) {
-            System.out.println("""
+            System.out.println(magenta + """
        🥪 ORDER 🥪
     ==================
     1. Add Sandwich
@@ -18,7 +22,7 @@ public class OrderScreen {
     4. Checkout
     0. Cancel Order
     ==================
-    """);
+    """ + reset);
 
             int choice = UtilMethods.promptForChoice(4); // Get user choice (0 to 4)
 

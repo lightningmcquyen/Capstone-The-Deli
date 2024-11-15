@@ -12,10 +12,14 @@ public class UtilMethods {
 
     // Used a generic class - takes any enum classes as a parameter for less repetitive code
     public static <T extends Enum<T>> T promptForEnum(Class<T> enumClass) {
-        System.out.println("""
+        // ANSI escape codes for blue and reset
+        String blue = "\033[34m";
+        String reset = "\033[0m";
+
+        System.out.println(blue + """
     🥪 Select Option 🥪
     ====================
-    """);
+""" + reset);
 
         T[] enumConstants = enumClass.getEnumConstants(); // Gets values from enum class
         for (int i = 0; i < enumConstants.length; i++) { // (Initialize, conditional - stops at the length, inc/dec) - check length of how many constants in my enum class
@@ -28,13 +32,17 @@ public class UtilMethods {
 
     public static <T extends Enum<T>> List<T> promptForEnumSelections(Class<T> enumClass) {
         List<T> selections = new ArrayList<>();
-        System.out.println("""
+        // ANSI escape codes for blue and reset
+        String blue = "\033[34m";
+        String reset = "\033[0m";
+
+        System.out.println(blue + """
            🥪 Select Options 🥪 
     ====================================
     You may choose more than one.
     Enter 0 to continue with your order.
     ====================================
-    """);
+    """ + reset);
 
         T[] enumConstants = enumClass.getEnumConstants();
 
@@ -58,9 +66,9 @@ public class UtilMethods {
     public static DrinkSize promptForDrinkSize() {
         System.out.println("Choose drink size: ");
         for (DrinkSize size : DrinkSize.values()) {
-            System.out.println(size.ordinal() + 1 + ") " + size);
+            System.out.println(size.ordinal() + 1 + ") " + size); // Returns the position of an enum constant in its declaration (i.e. its "index")
         }
-        return DrinkSize.values()[scanley.nextInt() - 1];
+        return DrinkSize.values()[scanley.nextInt() - 1]; // Returns an array containing all the constants of the enum in the order in which they were declared
     }
 
 

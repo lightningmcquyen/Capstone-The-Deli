@@ -6,23 +6,25 @@ import com.pluralsight.deli.application.UtilMethods;
 public class HomeScreen {
 
     public static void displayHomeScreen() {
-        System.out.println("""
-                
+        // Define color codes
+        String red = "\u001B[31m";    // Red
+        String reset = "\u001B[0m";   // Reset to default color
+
+        System.out.println(reset + """ 
                    ______  ___   _  _     ____                 _       __  __  _\s
                   |____  |/ _ \\ | || |   |  _ \\               | |     |  \\/  |(_)
                       / /| | | || || |_  | |_) |  __ _  _ __  | |__   | \\  / | _\s
                      / / | | | ||__   _| |  _ <  / _` || '_ \\ | '_ \\  | |\\/| || |
                     / /  | |_| |   | |   | |_) || (_| || | | || | | | | |  | || |
                    /_/    \\___/    |_|   |____/  \\__,_||_| |_||_| |_| |_|  |_||_|
-                                                                                \s
-                                                                                  \s
+                   """ + reset + red + """
                  ================================
                  🥪 How can I help you today? 🥪 
                  ================================
                  1. Start a new order
                  0. Exit
                  ================================
-                """);
+                """ + reset);
 
         // Using a loop to handle invalid input instead of recursion
         int choice;
