@@ -9,6 +9,7 @@ public class Order {
     private List<Orderable> items = new ArrayList<>();
     private double totalPrice;
 
+
     // Constructor with customer name
     public Order(String customerName) {
         this.customerName = customerName;
