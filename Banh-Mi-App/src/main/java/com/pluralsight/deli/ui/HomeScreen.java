@@ -26,7 +26,8 @@ public class HomeScreen {
 
         // Using a loop to handle invalid input instead of recursion
         int choice;
-        do {
+        boolean running = true;
+        while (running){
             choice = UtilMethods.promptForChoice(1); // Get user choice (0 or 1)
 
             // Handle user's choice
@@ -36,13 +37,15 @@ public class HomeScreen {
                     return;  // Exit the loop once the order starts
                 }
                 case 0 -> {
-                    System.out.println("Thank you for visiting! Goodbye.");
+                    System.out.println("Thank you for stopping by! Come again! \uD83D\uDC4B(•◡•)");
+                    running = false;
                     System.exit(0);  // Exit the application
+                    return;
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
                 // Continue to prompt user for a valid input
             }
-        } while (true);  // Loop until the user chooses to exit
+        }
     }
 
     private static void startNewOrder() {

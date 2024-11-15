@@ -91,15 +91,28 @@ public class UtilMethods {
 
     // Method to prompt the user to select a choice from a list of options
     public static int promptForChoice(int maxChoice) {
-        int choice;
-        do {
+        int choice = -1;
+        boolean validInput = false;
+
+        while (!validInput) {
             System.out.print("Please make a selection (0-" + maxChoice + "): ");
-            while (!scanley.hasNextInt()) {
+            String input = scanley.nextLine();  // Get input as a string
+
+            // Try parsing the input into an integer
+            try {
+                choice = Integer.parseInt(input);
+
+                // Check if the choice is within the valid range (0 to maxChoice)
+                if (choice >= 0 && choice <= maxChoice) {
+                    validInput = true;  // If valid, exit the loop
+                } else {
+                    System.out.println("Invalid choice. Please enter a number between 0 and " + maxChoice);
+                }
+            } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number between 0 and " + maxChoice);
-                scanley.next(); // Consume invalid input
             }
-            choice = scanley.nextInt();
-        } while (choice < 1 || choice > maxChoice); // Ensure the choice is within the valid range
+        }
+
         return choice;
     }
 
