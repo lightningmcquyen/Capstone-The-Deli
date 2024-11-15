@@ -112,7 +112,6 @@ public class UtilMethods {
                 System.out.println("Invalid input. Please enter a number between 0 and " + maxChoice);
             }
         }
-
         return choice;
     }
 
