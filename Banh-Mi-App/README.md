@@ -106,4 +106,4 @@ The part I found most interesting to work on was the `UtilMethods` class. By usi
 
 This project helped me gain a deeper understanding of Java and subjects such as advanced object-oriented programming or working with JUnit tests. If I'm being honest, this project was extremely difficult to complete as a beginner in Java. I contemplated quitting the program many times this week. But through the encouragement of my peers and my own grit, I'm still here. I'm excited about how well the application turned out and look forward to making it even better in the future.
 
-![Thanks for Checking Out the 704 Banh Mi Ordering System!](src/main/resources/Images/704 Bai.png)
+![Thanks for Checking Out the 704 Banh Mi Ordering System!](src/main/resources/Images/704-Bai.png)
