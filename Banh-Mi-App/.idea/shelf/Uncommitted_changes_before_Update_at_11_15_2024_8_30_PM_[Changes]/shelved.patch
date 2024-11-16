@@ -1,0 +1,69 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e452ea0a-d9db-4307-9ef8-e3a393d0e20b\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/receipts.csv\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/receipts.csv\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Order.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Order.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Orderable.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Orderable.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2oVYapnLvGosUamLGkiXonjkEio\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/pluralsight/The-Deli-Shop/Banh-Mi-App/src/main/resources/Images&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e452ea0a-d9db-4307-9ef8-e3a393d0e20b\" name=\"Changes\" comment=\"\" />\r\n      <created>1730956277749</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1730956277749</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"color-branch\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 00ae3e7d680f99a167e23c11ce41b8734839e9ed)
++++ b/.idea/workspace.xml	(date 1731701807967)
+@@ -7,9 +7,6 @@
+     <list default="true" id="e452ea0a-d9db-4307-9ef8-e3a393d0e20b" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/receipts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/receipts.csv" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Order.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Orderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Orderable.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -42,17 +39,18 @@
+     <option name="showLibraryContents" value="true" />
+     <option name="showMembers" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/pluralsight/The-Deli-Shop/Banh-Mi-App/src/main/resources/Images&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "last_opened_file_path": "C:/pluralsight/The-Deli-Shop/Banh-Mi-App/src/main/resources/Images",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "preferences.pluginManager"
+   }
+-}</component>
++}]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+Index: receipts.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Date/Time,Customer Name,Items,Total Price\r\n\"11/14/2024 18:18\",\"Quyen\",\"FOUR_INCH WHITE sandwich with premium toppings: [STEAK, STEAK], regular toppings: [CILANTRO, LETTUCE], sauces: [MAYO], toasted: true\",$7.50\r\n\"11/14/2024 18:19\",\"vong\",\"SMALL coke drink\",$2.00\r\nquyen,FOUR_INCH BAGUETTE sandwich with premium toppings: [PATE, COLD_CUTS], regular toppings: [JALAPENOS, CUCUMBERS, PICKLED_CARROTS, CILANTRO], sauces: [], toasted: true,7.5,Total Price: 7.5\r\n11/14/2024 18:27,quizzy,FOUR_INCH WHITE sandwich with premium toppings: [STEAK], regular toppings: [LETTUCE], sauces: [MAYO], toasted: true,6.5,Total Price: 6.5\r\n11/14/2024 19:15,quan,MEDIUM dr. drink,2.5,Total Price: 2.5\r\n11/14/2024 19:16,quanya,FOUR_INCH WHITE sandwich with premium toppings: [STEAK], regular toppings: [LETTUCE], sauces: [MAYO], toasted: true,6.5,Total Price: 6.5\r\n11/14/2024 19:21,Quincy,EIGHT_INCH WHEAT sandwich with premium toppings: [ROAST_BEEF], regular toppings: [PEPPERS], sauces: [KETCHUP], toasted: true,9.0,Total Price: 9.0\r\n11/14/2024 20:01,quinceneara,salt chips,1.5,Total Price: 1.5\r\n11/14/2024 21:00,Quyen Vong,EIGHT_INCH WHITE sandwich with premium toppings: [GRILLED_PORK, PATE], regular toppings: [LETTUCE, PEPPERS, ONIONS, TOMATOES, JALAPENOS, CUCUMBERS, PICKLES, GUACAMOLE, MUSHROOMS, PICKLED_CARROTS], sauces: [MAYO], toasted: false,11.0,MEDIUM Coke drink,2.5,Lays chips,1.5,Total Price: 15.0\r\n11/14/2024 23:04,quyenn,FOUR_INCH WHITE sandwich with premium toppings: [PATE, PATE, SWISS, CHEDDAR], regular toppings: [LETTUCE, LETTUCE, MUSHROOMS], sauces: [MAYO, MUSTARD], toasted: false,9.0,Total Price: 9.0\r\n11/14/2024 23:12,qui,FOUR_INCH WHITE sandwich with premium toppings: [STEAK], regular toppings: [LETTUCE], sauces: [MAYO], toasted: false,6.5,Total Price: 6.5\r\n11/14/2024 23:30,Quyen Vong,EIGHT_INCH BAGUETTE sandwich with:\r\n- Premium toppings: [PATE, COLD_CUTS]\r\n- Regular toppings: [JALAPENOS, CUCUMBERS, PICKLED_CARROTS, CILANTRO]\r\n- Sauces: []\r\n- Toasted: false\r\n,11.0,MEDIUM Root drink,2.5,Salt chips,1.5,Total Price: 15.0\r\n11/14/2024 23:36,queef,FOUR_INCH WHITE sandwich with:\r\n- Premium toppings: [STEAK]\r\n- Regular toppings: [LETTUCE],,\r\n- Sauces: [MAYO]\r\n- Toasted: false\r\n,6.5,Total Price: 6.5\r\n11/15/2024 01:23,,hot chips,1.5,Total Price: 1.5\r\n11/15/2024 01:32,quyenies,lays chips,1.5,Total Price: 1.5\r\n11/15/2024 01:34,Quinoa,LARGE Coffee drink,3.0,Total Price: 3.0\r\n11/15/2024 01:43,Quinn,FOUR_INCH WHITE sandwich with:\r\n- Premium toppings: [STEAK]\r\n- Regular toppings: [LETTUCE]\r\n- Sauces: [MAYO]\r\n- Toasted: false\r\n,6.5,SMALL coke drink,2.0,lays chips,1.5,Total Price: 10.0\r\n11/15/2024 13:28,Stitch,LARGE sprite drink,3.0,Total Price: 3.0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/receipts.csv b/receipts.csv
+--- a/receipts.csv	(revision 00ae3e7d680f99a167e23c11ce41b8734839e9ed)
++++ b/receipts.csv	(date 1731701807459)
+@@ -32,3 +32,9 @@
+ - Toasted: false
+ ,6.5,SMALL coke drink,2.0,lays chips,1.5,Total Price: 10.0
+ 11/15/2024 13:28,Stitch,LARGE sprite drink,3.0,Total Price: 3.0
++11/15/2024 14:54,Jontez,TWELVE_INCH BAGUETTE sandwich with:
++- Premium toppings: [BACON, PROVOLONE],,,,,,
++- Regular toppings: [JALAPENOS, CUCUMBERS, PICKLED_CARROTS, CILANTRO]
++- Sauces: [KETCHUP, MUSTARD]
++- Toasted: false,
++,13.75,LARGE lemonade drink,3.0,bbq chips,1.5,Total Price: 18.25
