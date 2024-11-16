@@ -12,7 +12,7 @@ public class DrinkScreen {
 
         // Prompt for drink size and flavor
         drink.setSize(UtilMethods.promptForDrinkSize());
-        drink.setFlavor(UtilMethods.promptUserChoice("Enter drink flavor: "));
+        drink.setFlavor(UtilMethods.promptForUserInput("Enter drink flavor: "));
 
         order.addItem(drink); // Add the drink to the order
 

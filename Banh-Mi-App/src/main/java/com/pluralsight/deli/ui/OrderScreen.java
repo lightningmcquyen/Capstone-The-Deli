@@ -16,11 +16,11 @@ public class OrderScreen {
             System.out.println(magenta + """
        🥪 ORDER 🥪
     ==================
-    1. Add Sandwich
-    2. Add Drink
-    3. Add Chips
-    4. Checkout
-    0. Cancel Order
+    (1) Add Sandwich
+    (2) Add Drink
+    (3) Add Chips
+    (4) Checkout
+    (0) Cancel Order
     ==================
     """ + reset);
 

@@ -1,7 +1,6 @@
 package com.pluralsight.deli.application;
 
 import com.pluralsight.deli.enums.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,12 +41,27 @@ public class Sandwich implements Orderable {
         this.sauces = sauces;
     }
 
-    public boolean setToasted(boolean promptForToast) {return isToasted;}
+    public boolean setToasted(boolean promptForToast) {
+        return isToasted;
+    }
+
+
+    public List<PremiumTopping> getPremiumToppings() {
+        return premiumToppings;
+    }
+
+    public List<RegularTopping> getRegularToppings() {
+        return regularToppings;
+    }
+
+    public List<SauceType> getSauces() {
+        return sauces;
+    }
 
     @Override
     public String getDescription() {
         return String.format("""
-        %s %s sandwich with:
+        %s %s with:
         - Premium toppings: %s
         - Regular toppings: %s
         - Sauces: %s
@@ -60,7 +74,6 @@ public class Sandwich implements Orderable {
         // Return a readable description of the sandwich
         return getDescription();
     }
-
 
     @Override
     public double getPrice() {
@@ -83,5 +96,4 @@ public class Sandwich implements Orderable {
 
         return price;
     }
-
 }

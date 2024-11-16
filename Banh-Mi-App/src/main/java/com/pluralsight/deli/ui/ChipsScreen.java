@@ -11,7 +11,7 @@ public class ChipsScreen {
         Chips chips = new Chips(); // Create a new chips object
 
         // Prompt for chips flavor
-        chips.setFlavor(UtilMethods.promptUserChoice("Enter chips flavor: "));
+        chips.setFlavor(UtilMethods.promptForUserInput("Enter chips flavor: "));
 
         order.addItem(chips);
 

@@ -79,7 +79,7 @@ public class UtilMethods {
     }
 
 
-    public static String promptUserChoice (String prompt){
+    public static String promptForUserInput(String prompt){
         System.out.println(prompt);
         return scanley.next();
     }

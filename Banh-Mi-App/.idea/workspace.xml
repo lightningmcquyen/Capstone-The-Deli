@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e452ea0a-d9db-4307-9ef8-e3a393d0e20b" name="Changes" comment="" />
+    <list default="true" id="e452ea0a-d9db-4307-9ef8-e3a393d0e20b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/application/UtilMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/ChipsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/ChipsScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/DrinkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/DrinkScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/OrderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/SandwichScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/deli/ui/SandwichScreen.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,19 +73,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="color-branch" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>

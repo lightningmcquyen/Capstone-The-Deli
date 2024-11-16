@@ -21,8 +21,8 @@ public class HomeScreen {
                  ================================
                  🥪 How can I help you today? 🥪 
                  ================================
-                 1. Start a new order
-                 0. Exit
+                 (1) Start a new order
+                 (0) Exit
                  ================================
                 """ + reset);
 
