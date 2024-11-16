@@ -127,7 +127,7 @@ public class SandwichScreen {
     // Customize an existing sandwich (signature or custom)
     private static void customizeSandwich(Sandwich sandwich) {
         // Allow the user to customize the sandwich toppings, sauces, and toast setting
-        System.out.println("Would you like to customize your sandwich?");
+        System.out.println("Would you like to further customize your sandwich?");
         boolean customizing = UtilMethods.promptForYesNo("Enter yes or no: ");
 
         if (customizing) {
